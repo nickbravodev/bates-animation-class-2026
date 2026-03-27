@@ -1,5 +1,6 @@
 @import url('/css/cards.css'); /* Importing card styles */
 @import url('/css/animated-objects.css'); /* Importing animated objects styles */
+@import url('/css/scroll.css'); /* Importing scroll animations styles */
 
 /* Root */
 * {
@@ -29,9 +30,15 @@ section {
   gap: 20px;
   min-height: 100vh;
 
+  &.no-grid {
+    display: block;
+  }
+
+
   @media (min-width: 900px) {
     grid-template-columns: repeat(3, 1fr);
   }
+
 }
 
 img {
